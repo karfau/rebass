@@ -16,7 +16,8 @@
   ],
   "scripts": {
     "prepare": "babel src -d dist && yarn styled-components",
-    "styled-components": "NODE_ENV=styled babel src -d styled-components"
+    "styled-components": "NODE_ENV=styled babel src -d styled-components",
+    "types": "tsc --declaration"
   },
   "dependencies": {
     "@emotion/core": "^10.0.0",
@@ -32,6 +33,10 @@
   "license": "MIT",
   "repository": "rebassjs/rebass",
   "devDependencies": {
+    "@types/styled-components": "^4.4.0",
+    "@types/styled-system": "^5.1.3",
+    "@types/styled-system__css": "^5.0.4",
+    "@types/styled-system__should-forward-prop": "^5.1.0",
     "babel-plugin-transform-rename-import": "^2.3.0"
   },
   "gitHead": "f0f01843e9fb63ca69112d7e97a1451b27ee9e6c"
